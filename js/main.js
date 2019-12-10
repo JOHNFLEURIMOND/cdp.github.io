@@ -21,6 +21,7 @@ async function fetchJSON() {
     .catch(function(err) {
       console.log(err);
     });
+  console.log(json)
   return fetchJSON;
 }
 
