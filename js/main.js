@@ -25,13 +25,14 @@ async function fetchJSON() {
   //Loop through every object in our JSON object
   function appendData(data) {
     //Get the div element from the body
+   
     alert("Hello");
-  console.log("Hi");
+    console.log("Hi");
 
   var mainContainer = document.getElementById("myData");
   for (var i = 0; i < data.length; i++) {
     var div = document.createElement("div");
-    div.innerHTML = "clients: " + data[i].clients + " " + data[i].clients.company.stations;
+    div.innerHTML = "clients: " + data[i].clients.company.stations;
     mainContainer.appendChild(div);
   }
   return appendData
