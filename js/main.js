@@ -4,12 +4,12 @@
 Author:John Fleurimond
 LIC:
 */
+var json = require("./data/CDPstations.json"); //(with path)
 
 alert("Hi");
 
 async function fetchJSON() {
   alert("Hello Fetching JSON");
-  var json = require("./data/CDPstations.json"); //(with path)
 
   await fetch(json)
     .then(function(response) {
