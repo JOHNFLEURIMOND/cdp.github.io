@@ -1,17 +1,16 @@
 "use strict";
+  var json = require("./data/CDPstations.json"); //(with path)
 
 /*Fetching JSON Data
 Author:John Fleurimond
 LIC:
 */
-var json = require("./data/CDPstations.json"); //(with path)
+import json from ('./CDPstations.json')
 
 alert("Hi");
 
-async function fetchJSON() {
-  alert("Hello Fetching JSON");
 
-  await fetch(json)
+ fetch(json)
     .then(function(response) {
       return response.json();
     })
@@ -22,8 +21,7 @@ async function fetchJSON() {
       console.log(err);
     });
   console.log(json)
-  return fetchJSON;
-}
+
 
 //Loop through every object in our JSON object
 function appendData(data) {
