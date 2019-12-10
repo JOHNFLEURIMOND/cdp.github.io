@@ -3,7 +3,6 @@ Author:John Fleurimond
 LIC:
 */
 
-alert("Hi");
 
 
 function fetchJSON() {
@@ -22,6 +21,7 @@ function fetchJSON() {
 //Loop through every object in our JSON object
 function appendData(data) {
   //Get the div element from the body
+  alert("Hi");
 
   var mainContainer = document.getElementById("myData");
   for (var i = 0; i < data.length; i++) {
@@ -33,5 +33,5 @@ function appendData(data) {
 
 //                         Moment.js
 var Now = moment().format("MMMM Do YYYY, h:mm:ss a");
-var x = document.getElementById("msgdiv").innerHTML;
-x = Now;
+var x = document.getElementById("msgdiv");
+x.innerHTML = Now;
