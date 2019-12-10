@@ -1,4 +1,5 @@
-{
+[
+  {
     "clients": {
       "company": "CDP",
       "stations": [
@@ -60,3 +61,4 @@
       ]
     }
   } 
+]
