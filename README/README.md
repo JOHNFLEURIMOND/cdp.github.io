@@ -15,7 +15,7 @@
 
 
 ## Lessons Learned:
-I need to use more HTML than React.js because it seems like I forgot about how to fetch api data.
+I need to use more HTML than React.js because it seems like I forgot about how to fetch api data. Sorry but i have done this a million times in React though.
 ## portfolio:
 
 **WEBSITE:** https:/johnfleurimond.com
