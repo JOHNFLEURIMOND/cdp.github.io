@@ -32,6 +32,6 @@ function appendData(data) {
 }
 
 //                         Moment.js
-var Now = moment().format("MMMM Do YYYY, h:mm:ss a");
+var Now = moment().format('MMMM Do YYYY, h:mm:ss a');
 var x = document.getElementById("msgdiv");
 x.innerHTML = Now;
