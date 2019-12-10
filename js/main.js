@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 /*Fetching JSON Data
 Author:John Fleurimond
 LIC:
