@@ -6,10 +6,10 @@ LIC:
 alert("Hi");
 
 
-function fetchJSON() {
+async function fetchJSON() {
   alert("Hello FetchJSON");
 
-  fetch("CDPstations.json")
+  await fetch("CDPstations.json")
     .then(function(response) {
       return response.json();
     })
