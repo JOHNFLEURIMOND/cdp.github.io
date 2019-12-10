@@ -9,7 +9,7 @@ alert("Hi");
 async function fetchJSON() {
   alert("Hello FetchJSON");
 
-  await fetch("CDPstations.json")
+  await fetch("../data/CDPstations.json")
     .then(function(response) {
       return response.json();
     })
