@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/JOHNFLEURIMOND/cdp.github.io"
   },
   "keywords": [
     "Calculator",
@@ -23,7 +23,7 @@
   "author": "John Fleurimond",
   "license": "ISC",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/JOHNFLEURIMOND/cdp.github.io/issues"
   },
-  "homepage": ""
+  "homepage": "https://johnfleurimond.github.io/cdp.github.io/"
 }
