@@ -2,27 +2,30 @@
 Author:John Fleurimond
 LIC:
 */
-const axios = require('axios');
 
 alert("Hi");
 
 
 function fetchJSON() {
   alert("Hello FetchJSON");
-  axios
-  .get("CDPstations.json") // no try/catch here
-  .then(response => {
-    console.log(response);
-  })
-  .catch(error => {
-    console.log(error.response);
-  });
+
+  fetch("CDPstations.json")
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(data) {
+      appendData(data);
+    })
+    .catch(function(err) {
+      console.log(err);
+    });
+  return fetchJSON
   }
   
   //Loop through every object in our JSON object
   function appendData(data) {
     //Get the div element from the body
-    alert("Hello AppendData");
+    alert("Hello");
   console.log("Hi");
 
   var mainContainer = document.getElementById("myData");
@@ -31,6 +34,8 @@ function fetchJSON() {
     div.innerHTML = "Name: " + data[i].firstName + " " + data[i].lastName;
     mainContainer.appendChild(div);
   }
+  return appendData
+    
 }
 
 //                         Moment.js
