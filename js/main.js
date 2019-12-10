@@ -3,6 +3,7 @@ Author:John Fleurimond
 LIC:
 */
 
+alert("Hi");
 
 
 function fetchJSON() {
@@ -16,12 +17,12 @@ function fetchJSON() {
     .catch(function(err) {
       console.log(err);
     });
-}
-
-//Loop through every object in our JSON object
-function appendData(data) {
-  //Get the div element from the body
-  alert("Hi");
+  }
+  
+  //Loop through every object in our JSON object
+  function appendData(data) {
+    //Get the div element from the body
+    alert("Hello");
   console.log("Hi");
 
   var mainContainer = document.getElementById("myData");
