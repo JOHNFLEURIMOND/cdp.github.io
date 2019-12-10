@@ -9,6 +9,7 @@ alert("Hi");
 
 
 const getData = async () => {
+  try {
     const res = await axios.get("CDPstations.json") // no try/catch here
     .then(response => {
       console.log(response);
@@ -21,6 +22,9 @@ const getData = async () => {
     console.log(`GET: Here's the list of CDPstations Data`, CDPstationsData);
 
     return getData;
+  } catch (e) {
+    console.error(e);
+  }
 };
 
 
