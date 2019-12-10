@@ -22,6 +22,7 @@ function fetchJSON() {
 function appendData(data) {
   //Get the div element from the body
   alert("Hi");
+  console.log("Hi");
 
   var mainContainer = document.getElementById("myData");
   for (var i = 0; i < data.length; i++) {
