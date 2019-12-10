@@ -39,7 +39,7 @@ function appendData(data) {
   var mainContainer = document.getElementById("myData");
   for (var i = 0; i < data.length; i++) {
     var div = document.createElement("div");
-    div.innerHTML = "clients: " + data[i].clients.stations;
+    div.innerHTML = "clients: " + data[0].clients.stations;
     mainContainer.appendChild(div);
   }
   return appendData;
@@ -48,4 +48,5 @@ function appendData(data) {
 var Now = moment().format("MMMM Do YYYY, h:mm:ss a");
 var x = document.getElementById("msgdiv");
 x.innerHTML = Now;
+
 fetchJSON();
