@@ -4,14 +4,24 @@
 Author:John Fleurimond
 LIC:
 */
-import json from "./data/CDPstations.json"; //(with path)
 
 alert("Hi");
+
+fetch(JSON)
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(data) {
+      appendData(data);
+    })
+    .catch(function(err) {
+      console.log(err);
+    });
 
 async function fetchJSON() {
   alert("Hello Fetching JSON");
 
-  await fetch(json)
+  await fetch()
     .then(function(response) {
       return response.json();
     })
