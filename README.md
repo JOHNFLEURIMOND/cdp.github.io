@@ -27,4 +27,5 @@
 
 ## Usage
 
-1. Right click on the `index.html` file in the folder and then right click and select the `Open in Browser` button.
+1. Right click on the `index.html` in file in the HTML folder.
+2. Then right click and select the `Open in Browser`.

@@ -26,9 +26,9 @@ function appendData(data) {
     div.innerHTML = 'Name: ' + data[i].firstName + ' ' + data[i].lastName;
     mainContainer.appendChild(div);
   }
+}
 
   //                         Moment.js
   var Now = moment().format("MMMM Do YYYY, h:mm:ss a");
   var x = document.getElementById("msgdiv").innerHTML;
   x = Now
-}
