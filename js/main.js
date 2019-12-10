@@ -7,7 +7,7 @@ alert("Hi");
 
 
 function fetchJSON() {
-  fetch("CDPstations.json")
+  fetch("./data/CDPstations.json")
     .then(function(response) {
       return response.json();
     })
