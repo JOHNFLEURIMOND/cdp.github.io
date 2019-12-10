@@ -39,7 +39,7 @@ function appendData(data) {
   var mainContainer = document.getElementById("myData");
   for (var i = 0; i < data.length; i++) {
     var div = document.createElement("div");
-    div.innerHTML = "clients: " + clients.stations;
+    div.innerHTML = "clients: " + data[0].clients.stations;
     mainContainer.appendChild(div);
   }
   return appendData;
