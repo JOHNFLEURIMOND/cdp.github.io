@@ -2,9 +2,9 @@
 Author:John Fleurimond
 LIC:
 */
+const axios = require('axios');
 
 alert("Hi");
-import axios from 'axios';
 
 
 function fetchJSON() {
