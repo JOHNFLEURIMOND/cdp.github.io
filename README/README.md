@@ -15,7 +15,10 @@
 
 
 ## Lessons Learned:
-I need to use more HTML than React.js because it seems like I forgot about how to fetch api data. Sorry but i have done this a million times in React though.
+This code is supposed to work but I am receiving a weird error `SyntaxError: Unexpected token < in JSON at position 0` but it should work! Super confused???????
+
+but I have learned how to used fetch again because in React.js I usually use npm package called Axios.
+
 ## portfolio:
 
 **WEBSITE:** https:/johnfleurimond.com
