@@ -56,3 +56,6 @@ function appendData(data) {
 var Now = moment().format("MMMM Do YYYY, h:mm:ss a");
 var x = document.getElementById("msgdiv");
 x.innerHTML = Now;
+
+fetchJSON();
+appendData();
