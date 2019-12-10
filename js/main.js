@@ -9,8 +9,8 @@ alert("Hi");
 
 async function fetchJSON() {
   alert("Hello Fetching JSON");
-
-  await fetch("./data/CDPstations.json")
+  let json = "../data/CDPstations.json"
+  await fetch(json)
     .then(function(response) {
       return response.json();
     })
@@ -23,8 +23,9 @@ async function fetchJSON() {
   return fetchJSON;
 }
 
+
 //Loop through every object in our JSON object
-console.log(data)
+//console.log(data);
 function appendData(data) {
   //Get the div element from the body
 
