@@ -6,25 +6,45 @@ LIC:
 alert("Hi");
 
 
-const getData = async () => {
-  try {
-    const res = await axios.get("CDPstations.json") // no try/catch here
-    .then(response => {
-      console.log(response);
+// alert("Hi");
+
+// const BASE_URL = 'https://jsonplaceholder.typicode.com';
+
+// const getTodos = async () => {
+//   try {
+//     const res = await axios  .get("CDPstations.json") // no try/catch here
+//     .then(response => {
+//       console.log(response);
+//     })
+//     .catch(error => {
+//       console.log(error.response);
+//     });
+//     const todos = res.data;
+
+//     console.log(`GET: Here's the list of todos`, todos);
+
+//     return todos;
+//   } catch (e) {
+//     console.error(e);
+//   }
+// };
+
+function fetchJSON() {
+  alert("Hello FetchJSON");
+
+  fetch("CDPstations.json")
+    .then(function(response) {
+      return response.json();
     })
-    .catch(error => {
-      console.log(error.response);
+    .then(function(data) {
+      appendData(data);
+    })
+    .catch(function(err) {
+      console.log(err);
     });
-    const CDPstationsData = res.data;
-
-    console.log(`GET: Here's the list of CDPstations Data`, CDPstationsData);
-
-    return getData;
-  } catch (e) {
-    console.error(e);
+  return fetchJSON;
   }
-};
-
+  
 
   //Loop through every object in our JSON object
   const appendData = async (data) => {
