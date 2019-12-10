@@ -4,12 +4,12 @@
 Author:John Fleurimond
 LIC:
 */
+import json from "./data/CDPstations.json"; //(with path)
 
 alert("Hi");
 
 async function fetchJSON() {
   alert("Hello Fetching JSON");
-  var json = require("./data/CDPstations.json"); //(with path)
 
   await fetch(json)
     .then(function(response) {
@@ -26,7 +26,7 @@ async function fetchJSON() {
 }
 
 //Loop through every object in our JSON object
-function appendData(data) {
+export function appendData(data) {
   //Get the div element from the body
 
   alert("Hello");
