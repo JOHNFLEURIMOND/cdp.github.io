@@ -15,7 +15,7 @@
 
 
 ## Lessons Learned:
-
+I need to use more HTML than React.js because it seems like I forgot about how to fetch api data.
 ## portfolio:
 
 **WEBSITE:** https:/johnfleurimond.com
