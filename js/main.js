@@ -6,8 +6,8 @@ LIC:
 */
 
 alert("Hi");
-
-fetch("./CDPstations.json")
+let json = "../data/CDPstations.json"
+fetch(json)
     .then(function(response) {
       return response.json();
     })
@@ -20,8 +20,9 @@ fetch("./CDPstations.json")
 
 async function fetchJSON() {
   alert("Hello Fetching JSON");
+  let json = "../data/CDPstations.json"
+  await   fetch(json)
 
-  await fetch()
     .then(function(response) {
       return response.json();
     })
