@@ -17,7 +17,7 @@ alert("Hi");
 //     });
 async function fetchJSON() {
   alert("Hello Fetching JSON");
-  let json = "./data/CDPstations.json";
+  let json = "../data/CDPstations.json";
   await fetch(json)
     .then(function(response) {
       return response.json();
@@ -39,7 +39,7 @@ function appendData(data) {
   var mainContainer = document.getElementById("myData");
   for (var i = 0; i < data.length; i++) {
     var div = document.createElement("div");
-    div.innerHTML = "clients: " + data[i].clients.company.stations;
+    div.innerHTML = "clients: " + data[i].clients.stations;
     mainContainer.appendChild(div);
   }
   return appendData;
