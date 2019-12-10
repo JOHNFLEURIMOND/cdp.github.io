@@ -15,10 +15,10 @@ alert("Hi");
 //     .catch(function(err) {
 //       console.log(err);
 //     });
-async function fetchJSON() {
+function fetchJSON() {
   alert("Hello Fetching JSON");
   let json = "../data/CDPstations.json"
-  await fetch(json)
+  fetch(json)
     .then(function(response) {
       return response.json();
     })
@@ -47,4 +47,6 @@ function appendData(data) {
 var Now = moment().format("MMMM Do YYYY, h:mm:ss a");
 var x = document.getElementById("msgdiv");
 x.innerHTML = Now;
+
+
 fetchJSON();
