@@ -18,23 +18,23 @@ fetch(json)
       console.log(err);
     });
 
-// async function fetchJSON() {
-//   alert("Hello Fetching JSON");
-//   let json = "../data/CDPstations.json"
-//   await   fetch(json)
+async function fetchJSON() {
+  alert("Hello Fetching JSON");
+  let json = "../data/CDPstations.json"
+  await   fetch(json)
 
-//     .then(function(response) {
-//       return response.json();
-//     })
-//     .then(function(data) {
-//       appendData(data);
-//     })
-//     .catch(function(err) {
-//       console.log(err);
-//     });
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(data) {
+      appendData(data);
+    })
+    .catch(function(err) {
+      console.log(err);
+    });
     
-//   return fetchJSON;
-// }
+  return fetchJSON;
+}
 
 //Loop through every object in our JSON object
 function appendData(data) {
