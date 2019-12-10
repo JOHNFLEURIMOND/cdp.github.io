@@ -7,9 +7,9 @@ alert("Hi");
 
 
 async function fetchJSON() {
-  alert("Hello FetchJSON");
+  alert("Hello Fetching JSON");
 
-  await fetch("../data/CDPstations.json")
+  await fetch("./data/CDPstations.json")
     .then(function(response) {
       return response.json();
     })
@@ -19,7 +19,7 @@ async function fetchJSON() {
     .catch(function(err) {
       console.log(err);
     });
-  return fetchJSON
+  return fetchJSON;
   }
   
   //Loop through every object in our JSON object
@@ -31,7 +31,7 @@ async function fetchJSON() {
   var mainContainer = document.getElementById("myData");
   for (var i = 0; i < data.length; i++) {
     var div = document.createElement("div");
-    div.innerHTML = "Name: " + data[i].firstName + " " + data[i].lastName;
+    div.innerHTML = "clients: " + data[i].clients + " " + data[i].clients.company.stations;
     mainContainer.appendChild(div);
   }
   return appendData
