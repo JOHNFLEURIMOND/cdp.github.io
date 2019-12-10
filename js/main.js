@@ -4,20 +4,20 @@ Author:John Fleurimond
 LIC:
 */
 alert("Hi");
-// let json = "../data/CDPstations.json"
-// fetch(json)
-//     .then(function(response) {
-//       return response.json();
-//     })
-//     .then(function(data) {
-//       appendData(data);
-//     })
-//     .catch(function(err) {
-//       console.log(err);
-//     });
+let json = "../data/CDPstations.json"
+fetch(json)
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(data) {
+      appendData(data);
+    })
+    .catch(function(err) {
+      console.log(err);
+    });
 function fetchJSON() {
   alert("Hello Fetching JSON");
-  let json = "../data/CDPstations.json"
+  let json = "../data/CDPstations.json";
   fetch(json)
     .then(function(response) {
       return response.json();
@@ -47,6 +47,5 @@ function appendData(data) {
 var Now = moment().format("MMMM Do YYYY, h:mm:ss a");
 var x = document.getElementById("msgdiv");
 x.innerHTML = Now;
-
 
 fetchJSON();
