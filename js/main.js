@@ -7,36 +7,28 @@ LIC:
 
 alert("Hi");
 
-fetch("./CDPstations.json")
-    .then(function(response) {
-      return response.json();
-    })
-    .then(function(data) {
-      appendData(data);
-    })
-    .catch(function(err) {
-      console.log(err);
-    });
+
 
 async function fetchJSON() {
   alert("Hello Fetching JSON");
 
-  await fetch()
-    .then(function(response) {
-      return response.json();
-    })
-    .then(function(data) {
-      appendData(data);
-    })
-    .catch(function(err) {
-      console.log(err);
-    });
+  await fetch("./CDPstations.json")
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+    appendData(data);
+  })
+  .catch(function(err) {
+    console.log(err);
+  });
     
   return fetchJSON;
 }
+fetchJSON();
 
 //Loop through every object in our JSON object
-export function appendData(data) {
+function appendData(data) {
   //Get the div element from the body
 
   alert("Hello");
@@ -50,7 +42,7 @@ export function appendData(data) {
   }
   return appendData;
 }
-
+appendData();
 //                         Moment.js
 var Now = moment().format("MMMM Do YYYY, h:mm:ss a");
 var x = document.getElementById("msgdiv");
