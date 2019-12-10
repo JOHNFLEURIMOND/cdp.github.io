@@ -7,6 +7,8 @@ alert("Hi");
 
 
 function fetchJSON() {
+  alert("Hello FetchJSON");
+
   fetch("CDPstations.json")
     .then(function(response) {
       return response.json();
@@ -22,7 +24,7 @@ function fetchJSON() {
   //Loop through every object in our JSON object
   function appendData(data) {
     //Get the div element from the body
-    alert("Hello");
+    alert("Hello AppendData");
   console.log("Hi");
 
   var mainContainer = document.getElementById("myData");
