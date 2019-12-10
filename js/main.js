@@ -9,8 +9,9 @@ alert("Hi");
 
 async function fetchJSON() {
   alert("Hello Fetching JSON");
+  var json = require("./data/CDPstations.json"); //(with path)
 
-  await fetch("../data/CDPstations.json")
+  await fetch(json)
     .then(function(response) {
       return response.json();
     })
