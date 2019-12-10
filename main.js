@@ -3,9 +3,10 @@ Author:John Fleurimond
 LIC:
 */
 
+    
 alert('Hi');
-
-fetch('./data/CDPstations.json')
+function fetchJSON() {
+  fetch('people.json')
   .then(function (response) {
     return response.json();
   })
@@ -15,10 +16,12 @@ fetch('./data/CDPstations.json')
   .catch(function (err) {
     console.log(err);
   });
-//Get the div element from the body
-var mainContainer = document.getElementById("myData");
+}
+
 //Loop through every object in our JSON object
 function appendData(data) {
+//Get the div element from the body
+
   var mainContainer = document.getElementById("myData");
   for (var i = 0; i < data.length; i++)
   {
