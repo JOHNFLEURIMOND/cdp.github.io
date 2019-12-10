@@ -7,7 +7,7 @@ LIC:
 
 alert("Hi");
 
-fetch(JSON)
+fetch("./CDPstations.json")
     .then(function(response) {
       return response.json();
     })
