@@ -4,17 +4,7 @@ Author:John Fleurimond
 LIC:
 */
 alert("Hi");
-// let json = "../data/CDPstations.json"
-// fetch(json)
-//     .then(function(response) {
-//       return response.json();
-//     })
-//     .then(function(data) {
-//       appendData(data);
-//     })
-//     .catch(function(err) {
-//       console.log(err);
-//     });
+
 async function fetchJSON() {
   alert("Hello Fetching JSON");
   let json = "./data/CDPstations.json";
