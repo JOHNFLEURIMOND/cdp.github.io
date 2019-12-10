@@ -1,4 +1,4 @@
-// "use strict";
+"use strict";
 /*Fetching JSON Data
 Author:John Fleurimond
 LIC:
@@ -15,10 +15,10 @@ alert("Hi");
 //     .catch(function(err) {
 //       console.log(err);
 //     });
-function fetchJSON() {
+async function fetchJSON() {
   alert("Hello Fetching JSON");
   let json = "../data/CDPstations.json";
-  fetch(json)
+  await fetch(json)
     .then(function(response) {
       return response.json();
     })
