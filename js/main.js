@@ -6,23 +6,28 @@ LIC:
 alert("Hi");
 
 
-function fetchJSON() {
-  alert("Hello FetchJSON");
-
-  fetch("CDPstations.json")
-    .then(function(response) {
-      return response.json();
+const getData = async () => {
+  try {
+    const res = await axios.get("CDPstations.json") // no try/catch here
+    .then(response => {
+      console.log(response);
     })
-    .then(function(data) {
-      appendData(data);
-    })
-    .catch(function(err) {
-      console.log(err);
+    .catch(error => {
+      console.log(error.response);
     });
+    const CDPstationsData = res.data;
+
+    console.log(`GET: Here's the list of CDPstations Data`, CDPstationsData);
+
+    return getData;
+  } catch (e) {
+    console.error(e);
   }
-  
+};
+
+
   //Loop through every object in our JSON object
-  function appendData(data) {
+  const appendData = async (data) => {
     //Get the div element from the body
     alert("Hello AppendData");
   console.log("Hi");
