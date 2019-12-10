@@ -24,7 +24,7 @@ async function fetchJSON() {
 }
 
 //Loop through every object in our JSON object
-console.log("This is ", data)
+console.log("This is " + data)
 function appendData(data) {
   //Get the div element from the body
 
