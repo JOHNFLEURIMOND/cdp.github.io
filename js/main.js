@@ -2,6 +2,8 @@
 Author:John Fleurimond
 LIC:
 */
+const axios = require('axios');
+
 
 alert("Hi");
 
@@ -9,12 +11,7 @@ alert("Hi");
 const getData = async () => {
   try {
     const res = await axios.get("CDPstations.json") // no try/catch here
-    .then(response => {
-      console.log(response);
-    })
-    .catch(error => {
-      console.log(error.response);
-    });
+    
     const CDPstationsData = res.data;
 
     console.log(`GET: Here's the list of CDPstations Data`, CDPstationsData);
