@@ -25,7 +25,6 @@ async function fetchJSON() {
     
   return fetchJSON;
 }
-fetchJSON();
 
 //Loop through every object in our JSON object
 function appendData(data) {
@@ -42,7 +41,7 @@ function appendData(data) {
   }
   return appendData;
 }
-appendData();
+
 //                         Moment.js
 var Now = moment().format("MMMM Do YYYY, h:mm:ss a");
 var x = document.getElementById("msgdiv");
