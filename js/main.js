@@ -2,34 +2,25 @@
 Author:John Fleurimond
 LIC:
 */
-const axios = require('axios');
-
 
 alert("Hi");
+import axios from 'axios';
 
 
-const getData = async () => {
-  try {
-    const res = await axios.get("CDPstations.json") // no try/catch here
-    .then(response => {
-      console.log(response);
-    })
-    .catch(error => {
-      console.log(error.response);
-    });
-    const CDPstationsData = res.data;
-
-    console.log(`GET: Here's the list of CDPstations Data`, CDPstationsData);
-
-    return getData;
-  } catch (e) {
-    console.error(e);
+function fetchJSON() {
+  alert("Hello FetchJSON");
+  axios
+  .get("CDPstations.json") // no try/catch here
+  .then(response => {
+    console.log(response);
+  })
+  .catch(error => {
+    console.log(error.response);
+  });
   }
-};
-
-
+  
   //Loop through every object in our JSON object
-  const appendData = async (data) => {
+  function appendData(data) {
     //Get the div element from the body
     alert("Hello AppendData");
   console.log("Hi");
