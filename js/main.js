@@ -7,21 +7,30 @@ LIC:
 
 alert("Hi");
 
-
+fetch("./CDPstations.json")
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(data) {
+      appendData(data);
+    })
+    .catch(function(err) {
+      console.log(err);
+    });
 
 async function fetchJSON() {
   alert("Hello Fetching JSON");
 
-  await fetch("./CDPstations.json")
-  .then(function(response) {
-    return response.json();
-  })
-  .then(function(data) {
-    appendData(data);
-  })
-  .catch(function(err) {
-    console.log(err);
-  });
+  await fetch()
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(data) {
+      appendData(data);
+    })
+    .catch(function(err) {
+      console.log(err);
+    });
     
   return fetchJSON;
 }
