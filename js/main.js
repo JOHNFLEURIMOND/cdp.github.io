@@ -29,7 +29,7 @@ function appendData(data) {
   var mainContainer = document.getElementById("myData");
   for (var i = 0; i < data[0].clients.stations.length; i++) {
     var div = document.createElement("div");
-    div.innerHTML = "Client: " +  data[0].clients.stations[i].title + <br/> + data[0].clients.stations[i].description + <br/> + data[0].clients.stations[i].address + <br/> + data[0].clients.stations[i].logo;
+    div.innerHTML = "Client: " + data[0].clients.stations[i].title + <br/> + data[0].clients.stations[i].description + <br/> + data[0].clients.stations[i].address + <br/> + data[0].clients.stations[i].logo;
     mainContainer.appendChild(div);
   }
   return appendData;
