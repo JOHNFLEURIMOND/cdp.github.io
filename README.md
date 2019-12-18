@@ -23,7 +23,7 @@ How to create GitHub pages.
 
 ## portfolio:
 
-**WEBSITE:** https:/johnfleurimond.com
+**WEBSITE:** https://johnfleurimond.com
 
 ## Installation
 
