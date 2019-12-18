@@ -1,5 +1,8 @@
-![Fleurimond]()
+# :checkered_flag:What It Looks Like :checkered_flag:: 
 
+![CDP](public/cdp.png)
+
+Check it out here : https://johnfleurimond.github.io/cdp.github.io/
 
 # My Awesome Project
 
@@ -14,10 +17,9 @@
 
 
 
-## Lessons Learned:
-This code is supposed to work but I am receiving a weird error `SyntaxError: Unexpected token < in JSON at position 0` but it should work! Super confused???????
+## Lessons Learned :mortar_board::
 
-but I have learned how to used fetch again because in React.js I usually use npm package called Axios.
+How to create GitHub pages.
 
 ## portfolio:
 
